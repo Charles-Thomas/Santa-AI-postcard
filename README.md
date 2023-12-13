@@ -10,7 +10,7 @@ To install:
 
 pip install openai==0.28
 
-Add Your own OpenAI API key (line 73)
+Add Your own OpenAI API key (line 71)
 
 To view a demo: https://www.youtube.com/watch?v=9FDkLNodO44
 
