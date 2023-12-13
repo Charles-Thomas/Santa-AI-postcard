@@ -3,9 +3,8 @@ import random
 import openai
 import datetime
 import os
-import config
 
-
+#Color For Terminal
 
 class Color:
     RESET = '\033[0m'
@@ -21,7 +20,7 @@ class xmas:
     wishes= ""
 
 
-
+#Intro
 def jolly_intro():
     print_colored_message("HO HO HO--", Color.RED)
     time.sleep(1)
@@ -53,7 +52,7 @@ def wish_list():
     else:
         print("HO HO HO! I'LL SEE YOU NEXT YEAR")
         
-        
+#PostCard Layout/Finalization        
 def postcard():
     
 
@@ -73,7 +72,7 @@ def postcard():
  
     xmas()  # Creating an instance of the Xmas class
 
- 
+     #SantAI response code
 
     prompt = f"React to the list of gifts that the child wants for Christmas and make sure you say you're going to get it for them: {xmas.wishes}"
       
@@ -92,7 +91,7 @@ def postcard():
 
     print("===================================================================================")
 
-   
+ #PostCard Animation  
 def envelope():
     my_list = []
     today = datetime.date.today()
@@ -110,6 +109,7 @@ def envelope():
         "|    " + xmas.name + "                                      "      +date+ "  |",
         " \\_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ /"
     ] 
+    # Simulate snow 
     def generate_snow(width, height):
         snow = []
         for _ in range(height):
@@ -140,10 +140,8 @@ def envelope():
 
     corrections()
     hohoho()
-   
 
-# Simulate snow 
-
+#In case of errors, correction function
 def corrections():
         correct = input("Is all of this correct? Y/N  ").lower()
         if correct == "y":
@@ -177,7 +175,7 @@ def corrections():
                     print_colored_message("Uh oh! Looks like we're gonna have to start over.", Color.GREEN)
                     wish_list()
                     postcard()
-
+#HOHOHO animation
 def hohoho():
     segue = [
         " _    _  ____    _    _  ____    _    _  ____  ",
@@ -193,6 +191,8 @@ def hohoho():
     for line in segue:
         print_colored_message(line, Color.RED if "RED" in line else Color.GREEN)
         time.sleep(0.2)
+
+#Candy Cane ASCII 
 def candy():
     print_colored_message("  =========== ", Color.RED) 
 print("----------====")
@@ -213,7 +213,7 @@ print("=====")
 
 
 
-
+#Start 
 jolly_intro()
 wish_list() 
 
