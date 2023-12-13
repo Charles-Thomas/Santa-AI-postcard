@@ -10,4 +10,7 @@ To install:
 
 pip install openai ==.028
 
-#Contributors: Levi Hayes (@BLKSheep) and Charles Thomas (@Uzavra)
+Add Your own OpenAI API key
+
+#Contributors: Levi Hayes (@BLKSheep) and Charles Thomas (@Uzavra)    
+         
