@@ -12,5 +12,7 @@ pip install openai ==.028
 
 Add Your own OpenAI API key (line 73)
 
+To view a demo: https://www.youtube.com/watch?v=9FDkLNodO44
+
 #Contributors: Levi Hayes (@BLKSheep) and Charles Thomas (@Uzavra)    
          
