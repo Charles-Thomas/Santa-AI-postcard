@@ -8,7 +8,7 @@ MUST use version ==0.28 of openai for there to be no complications
 
 To install:
 
-pip install openai ==.028
+pip install openai==0.28
 
 Add Your own OpenAI API key (line 73)
 
