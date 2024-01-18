@@ -1,6 +1,6 @@
 # Santa-AI-postcard
 
-#Description
+#Description:
 This project is designed to help you enjoy the holiday spirit with the help of Python and OpenAI. You'll be able to send Santa's AI helper a postcard and receive a personalized message back.
 
 #Installation
